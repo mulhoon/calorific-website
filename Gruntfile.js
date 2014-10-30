@@ -16,7 +16,6 @@ module.exports = function(grunt) {
 	var JS_FILES = [
 		'global',
 		'view',
-		'api',
 		'tools'
 	];
 
