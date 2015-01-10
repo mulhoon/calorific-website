@@ -4,9 +4,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Calorific - what do calories look like?</title>
 
-        <meta name="description" content="See exactly what calories look like (iOS)">
+        <meta name="description" content="See exactly what 200 calories look like (iPhone/iPad)">
         <meta name="keywords" content="calorific, calories, ipad, iphone, app, mobile, photos, photography, healthy, diet">
         <meta name="viewport" content="width=device-width,height=device-height">
+
+        <meta property="og:title" content="Calorific - what do calories look like?" />
+        <meta property="og:description" content="See exactly what 200 calories look like (iPhone/iPad)" />
+
+        <meta property="og:image" content="http://www.calorificapp.com/s/splash.jpg" />
+        <meta property="og:image" content="http://www.calorificapp.com/s/s07.jpg" />
+        <meta property="og:image" content="http://www.calorificapp.com/s/s09.jpg" />
+        <meta property="og:image" content="http://www.calorificapp.com/s/s10.jpg" />
+        <meta property="og:image" content="http://www.calorificapp.com/s/s13.jpg" />
 
         <script src="js/vendor/device.min.js"></script>
 
@@ -18,21 +27,46 @@
 
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript">
+        //<![CDATA[
+          (function() {
+            var shr = document.createElement('script');
+            shr.setAttribute('data-cfasync', 'false');
+            shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+            shr.type = 'text/javascript'; shr.async = 'true';
+            shr.onload = shr.onreadystatechange = function() {
+              var rs = this.readyState;
+              if (rs && rs != 'complete' && rs != 'loaded') return;
+              var site_id = '14d1d2ad8ac471ff2d766e6768f93e60';
+              try { Shareaholic.init(site_id); } catch (e) {}
+            };
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(shr, s);
+          })();
+        //]]>
+        </script>
+
     </head>
     <body>
         <section class="page">
             <img class="icon" src="img/icon.png"/>
             <H1>CALORIFIC</H1>
             <H2>what do calories actually look like?</H2>
-            <a href="https://itunes.apple.com/app/calorific-what-do-calories/id828929865?ls=1&mt=8"><img class="download" src="img/download.svg"/></a>
+            <a href="https://itunes.apple.com/app/calorific-what-do-calories/id828929865?ls=1&mt=8" onClick="ga('send', 'event', { eventCategory: 'download', eventAction: 'app'});"><img class="download" src="img/download.svg"/></a>
             <div class="ipadholder">
-                <img src="img/photo1.jpg"/>
+                <img class="badge" src="img/badge.png"/>
+                <img class="screen" src="img/photo1.jpg"/>
             </div>
             <p class="description">
-                <a href="https://itunes.apple.com/app/calorific-what-do-calories/id828929865?ls=1&mt=8">download</a> Calorific for <b>iPhone and iPad</b> <br/>to see exactly what calories look like <br/>with beautiful photography.
+                Get Calorific for <b>iPhone and iPad</b> <br/>to see exactly what calories look like <br/>with beautiful photography.
             </p>
+            
             <footer>
-                 &copy; 2014 Calorific  &nbsp;&middot;&nbsp;  <a href="http://twitter.com/calorificapp/">@calorificapp</a>  &nbsp;&middot;&nbsp;  <a href="press">press</a><br/>
+                 <a href="https://itunes.apple.com/app/calorific-what-do-calories/id828929865?ls=1&mt=8" onClick="ga('send', 'event', { eventCategory: 'download', eventAction: 'app'});"><img class="download" src="img/download.svg"/></a>
+                 <br/><br/>
+                <a href="help">help</a><br/><br/>
+                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='11653775'></div>
+                 &copy; 2014 Calorific  &nbsp;&middot;&nbsp;  <a href="http://twitter.com/calorificapp/">@calorificapp</a><br/>
                  <small>inspired by a great article on <a href="http://www.wisegeek.com">wiseGEEK</a></small>
             </footer>
         </section>
@@ -40,13 +74,14 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.  -->
         <script>
-            var _gaq=[['_setAccount','UA-3530411-24'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-3530411-24', 'auto');
+          ga('send', 'pageview');
         </script>
-       
     </body>
 </html>

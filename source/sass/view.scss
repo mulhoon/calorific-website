@@ -49,9 +49,17 @@ b{
 	padding-top:3%;
 	padding-bottom:14%;
 	margin-bottom: -5%;
-	img{
+	.screen{
 		position: relative;
 		width:68%;
+	}
+	.badge{
+		position:absolute;
+		top:0;
+		left:0;
+		width:20%;
+		transform: translate3d(0, -45%, 0);
+		z-index: 10;
 	}
 }
 h1{
@@ -72,13 +80,17 @@ h2{
 	letter-spacing: 0.05em;
 }
 .download{
-	width:150px;
+	width:210px;
 	margin-bottom: 30px;
+	border-radius: 8px;
 	html.tablet &{
 		width:200px;
 	}
+	&:hover{
+		background: rgba(#FFF, 0.2);
+	}
 }
-.description{
+.description, .description2{
 	font-size: 1.5em;
 	margin-left: 50px;
 	margin-right: 50px;
@@ -88,11 +100,28 @@ h2{
 		margin-right: 20px;
 	}
 }
+.description2{
+	text-align: left;
+	// margin-left: 150px;
+	// margin-right: 150px;
+	html.mobile &{
+		font-size: 1em;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.purchase{
+		width:100%;
+		border:1px solid rgba(#FFF, 0.5);
+	}
+}
 footer{
 	margin-top:60px;
 	font-weight: 300;
 	font-size: 0.85em;
 	small{
 		opacity: 0.5;
+	}
+	a{
+		font-size: 1.5em;
 	}
 }

@@ -46,9 +46,17 @@ b {
   padding-top: 3%;
   padding-bottom: 14%;
   margin-bottom: -5%; }
-  .ipadholder img {
+  .ipadholder .screen {
     position: relative;
     width: 68%; }
+  .ipadholder .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    -webkit-transform: translate3d(0, -45%, 0);
+            transform: translate3d(0, -45%, 0);
+    z-index: 10; }
 
 h1 {
   font-weight: 300;
@@ -67,19 +75,33 @@ h2 {
   letter-spacing: 0.05em; }
 
 .download {
-  width: 150px;
-  margin-bottom: 30px; }
+  width: 210px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px; }
   html.tablet .download {
     width: 200px; }
+  .download:hover {
+    background: rgba(255, 255, 255, 0.2); }
 
-.description {
+.description, .description2 {
   font-size: 1.5em;
   margin-left: 50px;
   margin-right: 50px; }
-  html.mobile .description {
+  html.mobile .description, html.mobile .description2 {
     font-size: 1em;
     margin-left: 20px;
     margin-right: 20px; }
+
+.description2 {
+  text-align: left; }
+  html.mobile .description2 {
+    font-size: 1em;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .description2 .purchase {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5); }
 
 footer {
   margin-top: 60px;
@@ -87,3 +109,5 @@ footer {
   font-size: 0.85em; }
   footer small {
     opacity: 0.5; }
+  footer a {
+    font-size: 1.5em; }
